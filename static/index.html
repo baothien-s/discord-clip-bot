@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discord Media Uploader</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<main>
+  <h1>Discord Media Uploader</h1>
+  <div id="banner" class="banner hidden"></div>
+
+  <div id="drop" class="drop">
+    <p>Drag &amp; drop photos/videos here</p>
+    <p class="muted">or</p>
+    <label class="btn" for="picker">Choose files</label>
+    <input id="picker" type="file" accept="image/*,video/*" multiple hidden>
+  </div>
+
+  <div class="row">
+    <h2>Queue (<span id="count">0</span>)</h2>
+    <div>
+      <button id="clear" class="btn ghost">Clear</button>
+      <button id="send" class="btn primary">Send all to Discord</button>
+    </div>
+  </div>
+  <div id="queue" class="queue"></div>
+  <div id="status" class="status"></div>
+
+  <h2>Recent log</h2>
+  <button id="refresh" class="btn ghost">Refresh</button>
+  <div id="log" class="log"></div>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>

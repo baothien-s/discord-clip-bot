@@ -1,0 +1,7 @@
+discord.py>=2.3
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-dotenv>=1.0
+aiofiles>=23
+python-multipart>=0.0.9
+openpyxl>=3.1
